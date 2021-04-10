@@ -22,6 +22,5 @@ app.use(routes);
 
 
 // Ouvindo requisições na porta 3333
-app.listen(port);
+app.listen(port, () => console.log(`Listening on port ${port}...`));
 
-console.log(`Listening on port ${port}...`)
