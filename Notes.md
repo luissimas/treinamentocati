@@ -105,6 +105,14 @@ $ npx knex migrate:rollback
 É um módulo que permite restringir quais domínios podem fazer uma requisição para a aplicação.
 
 
+
+
+
+
+
+
+
+
 # Front-end
 - Interação com o usuário, UI/UX
 - Consome os dados do back-end através da API do mesmo
@@ -117,7 +125,7 @@ Ao invés do servidor retornar as páginas inteiras em HTML, ele retorna somente
 ## React
 Framework bala interfaces reativas.
 
-- JSX
+- JSX é o HTML integrado ao JavaScript
 - Fazendo parte do npm, o npx permite executar comandos de pacotes externos sem a necessidade de instalar eles.
 
 Criando um projeto react:
@@ -126,6 +134,12 @@ $ npx create-react-app <nome do projeto>
 $ npm start
 
 ```
+
+- Um componente nada mais é do que uma função que retorna HTML
+- No React as propriedades são atributos passados para os componentes. Elas são passadas através do parâmetro props da função do componente.
+- Estados são variáveis cuja mudança de valor faz com que o componente seja recarregado.
+- Por razões de performance não é possível alterar diretamente o valor de um estado, apenas sobrepor valores usando a função que é retornada no momento da criação do estado.
+
 
 ## React Native
 Usando JavaScript pra mobile de forma nativa, fornecendo mais flexibilidade e reusabilidade de código.
