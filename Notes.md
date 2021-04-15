@@ -9,13 +9,14 @@ Usando a engine V8 do Chrome podemos executar javascript fora do browser, aprove
 Aqui usamos o framework Express para as aplicações em node.js, muito útil para dar a base inicial e configurar as rotas.
 
 Criando um projeto node:
+
 ```
 $ npm init -y
 $ npm install express
 
 $ npm index.js
-
 ```
+
 ## API RESTFUL
 Conjunto de regras e protocolos para o desenvolvimento de APIs.
 
@@ -48,7 +49,6 @@ Instalamos com a flag `-D` para que o pacote seja instalado como uma dependênci
 
 ```
 $ npm install nodemon -D
-
 ```
 
 ## Bancos de dados
@@ -69,13 +69,11 @@ Knex.js é um dos mais populares query builders atualmente:
 $ npm install knex
 
 $ npm install sqlite3
-
 ```
 
 Para iniciar o Knex e criar o arquivo de configuração:
 ```
 $ npx knex init
-
 ```
 
 As migrations do Knex permitem criar as tabelas do banco de usando JS.
@@ -84,21 +82,18 @@ Criando uma nova migration:
 
 ```
 $ npx knex migrate:make nome_migration
-
 ```
 
 Executando uma nova migration:
 
 ```
 $ npx knex migrate:latest
-
 ```
 
 Desfazendo a última migration:
 
 ```
 $ npx knex migrate:rollback
-
 ```
 
 ## CORS
@@ -129,10 +124,10 @@ Framework bala interfaces reativas.
 - Fazendo parte do npm, o npx permite executar comandos de pacotes externos sem a necessidade de instalar eles.
 
 Criando um projeto react:
+
 ```
 $ npx create-react-app <nome do projeto>
 $ npm start
-
 ```
 
 - Um componente nada mais é do que uma função que retorna HTML
