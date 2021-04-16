@@ -1,6 +1,9 @@
 // Express
 const express = require('express');
 
+// Celebrate para validação
+const { errors } = require('celebrate')
+
 // Módulo com as rotas da aplicação
 const routes = require('./routes');
 
@@ -19,8 +22,6 @@ app.use(cors());
 app.use(express.json());
 // Definindo o uso do módulo de rotas
 app.use(routes);
+app.use(errors());
 
-
-// Ouvindo requisições na porta 3333
-app.listen(port, () => console.log(`Listening on port ${port}...`));
-
+module.exports = app;
